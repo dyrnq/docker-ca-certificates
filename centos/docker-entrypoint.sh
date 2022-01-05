@@ -57,14 +57,14 @@ server {
         root   /usr/share/nginx/html;
     }
 
-	ssl_prefer_server_ciphers off;
-	ssl_dhparam /opt/tls/dhparam.pem;
-	ssl_session_timeout  1d;
-	ssl_session_cache shared:SSL:10m;
-	ssl_session_tickets off;
-	ssl_buffer_size 4k;
-	ssl_certificate  /opt/tls/server.crt;
-	ssl_certificate_key  /opt/tls/server.key;
+    ssl_prefer_server_ciphers off;
+    ssl_dhparam /opt/tls/dhparam.pem;
+    ssl_session_timeout  1d;
+    ssl_session_cache shared:SSL:10m;
+    ssl_session_tickets off;
+    ssl_buffer_size 4k;
+    ssl_certificate  /opt/tls/server.crt;
+    ssl_certificate_key  /opt/tls/server.key;
 }
 EOF
 
