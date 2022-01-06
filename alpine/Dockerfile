@@ -1,7 +1,7 @@
 FROM alpine
 
 RUN \
-    apk add openssl libcrypto3 wget curl ca-certificates bash && \
+    apk add openssl libcrypto3 wget curl ca-certificates bash p11-kit-trust && \
     printf "%s%s%s%s\n" \
     "@nginx " \
     "http://nginx.org/packages/alpine/v" \
