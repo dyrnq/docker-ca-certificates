@@ -36,6 +36,12 @@ cd docker-ca-certificates/almalinux
 docker build -t ca:almalinux .
 docker run -d --name ca-almalinux ca:almalinux
 docker exec -it ca-almalinux bash -c "curl --header \"host:hello.com\" https://127.0.0.1"
+
+## base image rockylinux
+cd docker-ca-certificates/rockylinux
+docker build -t ca:rockylinux .
+docker run -d --name ca-rockylinux ca:rockylinux
+docker exec -it ca-rockylinux bash -c "curl --header \"host:hello.com\" https://127.0.0.1"
 ```
 
 ## ref
