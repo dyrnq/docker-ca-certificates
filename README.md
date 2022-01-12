@@ -42,6 +42,12 @@ cd docker-ca-certificates/rockylinux
 docker build -t ca:rockylinux .
 docker run -d --name ca-rockylinux ca:rockylinux
 docker exec -it ca-rockylinux bash -c "curl --header \"host:hello.com\" https://127.0.0.1"
+
+## base image opensuse
+cd docker-ca-certificates/opensuse
+docker build -t ca:opensuse .
+docker run -d --name ca-opensuse ca:opensuse
+docker exec -it ca-opensuse bash -c "curl --header \"host:hello.com\" https://127.0.0.1"
 ```
 
 ## ref
